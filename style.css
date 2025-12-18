@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: roboto;
+    src: url(./font/Roboto.ttf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(./font/BebasNeue.ttf);
+}
+
+/* navbar start */
+
+header{
+    width: 100%;
+    background-color: #FFF9F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 110px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    font-family: roboto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+header .logo{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+header .logo .logoimg{
+    width: 30%;
+}
+header .logo img{
+    width: 100%;
+}
+header .content{
+    width: 70%;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #4C4A49;
+    font-weight: 500;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+#nike{
+    color: #FF8367;
+    font-weight: 1000;
+    font-size: 1.22rem;
+}
+#react{
+    color: #191818;
+    font-size: 1.22rem;
+}
+.nav-links li a:hover{
+    
+    color: black;
+}
+
+.nav-links  li .h {
+    color: black;
+
+}
+.icon{
+    display: none;
+}
+/* navbar end */
+
+/* banner start */
+.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.banner .shoe{
+    width: 40%;
+}
+.banner .shoe img{
+    width: 100%;
+}
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.banner .content button{
+    width: 30%;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    background-color: #0B5ED7;
+    padding: 10px;
+    color: white;
+    margin-top: 5%;
+}
+#nikee{
+    color: #FF8367;
+    font-size: 80px;
+    font-family: bebas;
+}
+#reactt{
+    color: #363958;
+    font-size: 80px;
+    font-family: bebas;
+}
+.banner .content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+    
+
+/* banner end */
+
+/* shoe start */
+
+.dddd{
+    background-color: #73706E;
+}.orangee{
+    width: 60px;
+}
+
+/* shoe end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+
+
+@media screen and (max-width:480px) {
+    .icon{
+        display: block;
+        width: 10%;
+        color: #73706E;
+        border: 1px solid #73706E;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    nav{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    header{
+        padding: 8px;
+        justify-content: space-between;
+    }
+    header .logo{
+        width: 70%;
+    }
+    header .logoimg{
+        width: 50%;
+    }
+    header .logoimg img{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .banner .shoe{
+        width: 100%;
+    }
+    .banner .shoe img{
+        flex-direction: column;
+
+    }
+    
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .icon{
+        display: block;
+        width: 10%;
+        color: #73706E;
+        border: 1px solid #73706E;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    nav{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-between;
+    }
+    header .logo{
+        width: 50%;
+    }
+    header .logoimg{
+        width: 50%;
+    }
+    header .logoimg img{
+        width: 100%;
+    }
+    .banner{
+        padding: 30px;
+    }
+    .banner .shoe{
+    width: 50%;
+    
+}
+.banner .shoe img{
+    width: 100%;
+}
+.banner .content button{
+    width: 35%;
+}
+    
+}
