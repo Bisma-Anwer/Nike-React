@@ -1,12 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+
+    --secondarycolor: #E5E5E5;
+}
+
 @font-face {
     font-family: roboto;
     src: url(./font/Roboto.ttf);
 }
+
 @font-face {
     font-family: bebas;
     src: url(./font/BebasNeue.ttf);
@@ -14,7 +21,7 @@
 
 /* navbar start */
 
-header{
+header {
     width: 100%;
     background-color: #FFF9F4;
     display: flex;
@@ -26,78 +33,95 @@ header{
     padding-top: 13px;
     padding-bottom: 13px;
 }
-header .logo{
+
+header .logo {
     display: flex;
     width: 20%;
     align-items: center;
 }
-header .logo .logoimg{
+
+header .logo .logoimg {
     width: 30%;
 }
-header .logo img{
+
+header .logo img {
     width: 100%;
 }
-header .content{
+
+header .content {
     width: 70%;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 40px;
 }
-.nav-links li{
+
+.nav-links li {
     list-style: none;
 }
-.nav-links li a{
+
+.nav-links li a {
     text-decoration: none;
     color: #4C4A49;
     font-weight: 500;
     padding-right: .5rem;
     padding-left: .5rem;
 }
-#nike{
+
+#nike {
     color: #FF8367;
     font-weight: 1000;
     font-size: 1.22rem;
 }
-#react{
+
+#react {
     color: #191818;
     font-size: 1.22rem;
 }
-.nav-links li a:hover{
-    
+
+.nav-links li a:hover {
+
     color: black;
 }
 
-.nav-links  li .h {
+.nav-links li .h {
     color: black;
 
 }
-.icon{
+
+.icon {
     display: none;
 }
+
 /* navbar end */
 
 /* banner start */
-.banner{
+.banner {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
+    padding-bottom: 5%;
 }
-.banner .shoe{
+
+.banner .shoe {
     width: 40%;
 }
-.banner .shoe img{
+
+.banner .shoe img {
     width: 100%;
 }
-.banner .content{
+
+.banner .content {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+
 }
-.banner .content button{
-    width: 30%;
+
+.banner .content button {
+    width: 31%;
     outline: none;
     background: transparent;
     border: none;
@@ -107,63 +131,271 @@ header .content{
     color: white;
     margin-top: 5%;
 }
-#nikee{
+
+#nikee {
     color: #FF8367;
     font-size: 80px;
     font-family: bebas;
 }
-#reactt{
+
+#reactt {
     color: #363958;
     font-size: 80px;
     font-family: bebas;
 }
-.banner .content p{
+
+.banner .content p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
-    
+
 
 /* banner end */
 
-/* shoe start */
-
-.dddd{
-    background-color: #73706E;
-}.orangee{
-    width: 60px;
+/* casual shoe start */
+.casual {
+    width: 100%;
+    background-color: var(--secondarycolor);
+    padding: 55px 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* shoe end */
+.casual h2 {
+    font-family: bebas;
+    font-size: 48px;
+    color: #363958;
+    padding-left: 4%;
+}
+
+.casual .shoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.casual .shoe {
+    width: 30%;
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.casual .shoe img {
+    width: 100%;
+    height: 350px;
+}
+
+.casual .shoeimg {
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+.casual h4 {
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #363958;
+}
+
+.casual .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.casual .dollar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.content p {
+    font-family: roboto;
+
+}
+
+.dollar button {
+    width: 34%;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    background-color: #0B5ED7;
+    padding: 10px;
+    color: white;
+
+}
+
+.dollar h4 {
+    color: #ff8367;
+}
+
+.casual .content {
+    padding: 15px;
+}
+
+.casual #white {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* casual shoe end */
+
+/* shopping start */
+.shopping {
+    width: 100%;
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.shopping .content {
+    width: 40%;
+}
+
+.shopping .shoppingimg {
+    width: 50%;
+}
+
+.shopping .shoppingimg img {
+    width: 100%;
+}
+
+.shopping .box {
+    width: 87%;
+    display: flex;
+    background-color: white;
+    padding: 15px 12px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+
+}
+
+.shopping .content {
+    width: 50%;
+}
+
+.shopping .houseimg {
+    width: 20%;
+}
+
+.shopping .houseimg img {
+    width: 100%;
+}
+
+.content h3 {
+    font-family: roboto;
+    color: #363958;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* shopping end */
+
+/* input start */
+.input {
+    width: 100%;
+    background-color: var(--secondarycolor);
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.info {
+    background: #f7f7f7;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 92%;
+    text-align: center;
+}
 
 
+.info h4 {
+    text-align: center;
+    font-family: roboto;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #333;
+    text-transform: uppercase;
+}
 
+.info input {
+    width: 85%;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
 
+}
 
+.info button {
+    height: 42px;
+    padding: 0 25px;
+    border: none;
+    background: #1e73be;
+    color: white;
+    cursor: pointer;
+}
 
+.email {
+    display: flex;
+}
 
+/* input end */
+/* footer start */
+.foot{
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: roboto;
+    
+}
+.foot .featured li a{
+    text-decoration: none;
+    color: #212529;
 
+    
+}
+.foot .featured li{
+    list-style: none;
+    padding-top: 7px;
+    
+}
+.foot h3{
+    padding: 10px 0px;
+    font-size: 24px;
+}
 
+.last{
+    background-color: #F8F9FA;
+    font-family: roboto;
+    font-size: 16px;
+    text-align: center;
+    padding: 2%;
+}
+.last span{
+    color: #ff8367;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer end */
 
 
 
@@ -175,7 +407,7 @@ header .content{
 
 
 @media screen and (max-width:480px) {
-    .icon{
+    .icon {
         display: block;
         width: 10%;
         color: #73706E;
@@ -183,42 +415,106 @@ header .content{
         padding: 10px;
         border-radius: 5px;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    header{
+
+    header {
         padding: 8px;
         justify-content: space-between;
     }
-    header .logo{
+
+    header .logo {
         width: 70%;
     }
-    header .logoimg{
+
+    header .logoimg {
         width: 50%;
     }
-    header .logoimg img{
+
+    header .logoimg img {
         width: 100%;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
         padding: 20px;
+        padding-bottom: 20%;
     }
-    .banner .shoe{
+
+    .banner .shoe {
         width: 100%;
     }
-    .banner .shoe img{
+
+    .banner .shoe img {
         flex-direction: column;
 
     }
-    
+
+    /* casual */
+    .casual .shoes {
+        flex-direction: column;
+    }
+
+    .casual .shoe {
+        width: 100%;
+    }
+
+    .casual {
+        padding: 55px 29px;
+    }
+
+    .dollar button {
+        width: 40%;
+    }
+
+    /* shopping */
+    .shopping {
+        flex-direction: column;
+    }
+
+    .shoppingimg {
+        order: -1;
+    }
+
+    .shopping .shoppingimg {
+        width: 100%;
+    }
+
+    .shopping .box {
+        width: 100%;
+    }
+
+    .shopping .shoppingimg img {
+        padding-bottom: 15px;
+    }
+
+    /* input */
+    .info h4 {
+        font-size: 22px;
+        padding-bottom: 7%;
+    }
+    /* footer */
+    .foot{
+        display: flex;
+        flex-direction: column;
+         text-align: center;
+        
+    }
+
+
 }
 
 
+
+
 @media screen and (min-width:481px) and (max-width:768px) {
-    .icon{
+    .icon {
         display: block;
         width: 10%;
         color: #73706E;
@@ -226,38 +522,163 @@ header .content{
         padding: 10px;
         border-radius: 5px;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    header{
+
+    header {
         padding-left: 5%;
         padding-right: 5%;
         justify-content: space-between;
     }
-    header .logo{
+
+    header .logo {
         width: 50%;
     }
-    header .logoimg{
+
+    header .logoimg {
         width: 50%;
     }
-    header .logoimg img{
+
+    header .logoimg img {
         width: 100%;
     }
-    .banner{
+
+    .banner {
         padding: 30px;
     }
-    .banner .shoe{
-    width: 50%;
-    
+
+    .banner .shoe {
+        width: 50%;
+    }
+
+    .banner .shoe img {
+        width: 100%;
+    }
+
+    .banner .content button {
+        width: 50%;
+    }
+
+    /* casual */
+    .casual .shoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .casual .shoe {
+        width: 80%;
+    }
+
+    .casual {
+        padding: 55px 29px;
+    }
+
+    .dollar button {
+        width: 40%;
+    }
+
+    /* shopping */
+    .shopping {
+        flex-direction: column;
+    }
+
+    .shoppingimg {
+        order: -1;
+    }
+
+    .shopping .shoppingimg {
+        width: 100%;
+    }
+
+    .shopping .box {
+        width: 100%;
+    }
+
+    .shopping .shoppingimg img {
+        padding-bottom: 15px;
+    }
+     /* footer */
+    .foot{
+        display: flex;
+        flex-direction: column;
+         text-align: center;
+        
+    }
+
+
 }
-.banner .shoe img{
-    width: 100%;
-}
-.banner .content button{
-    width: 35%;
-}
-    
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .icon {
+        display: block;
+        width: 10%;
+        color: #73706E;
+        border: 1px solid #73706E;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 50%;
+    }
+
+    header .logoimg {
+        width: 50%;
+    }
+
+    header .logoimg img {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner .shoe {
+        width: 50%;
+    }
+
+    .banner .shoe img {
+        width: 100%;
+    }
+
+    .banner .content button {
+        width: 35%;
+    }
+
+    /* casual */
+
+    .casual .shoe {
+        width: 80%;
+    }
+
+    .casual {
+        padding: 55px 29px;
+    }
+
+    .dollar button {
+        width: 62%;
+    }
+
 }
